@@ -74,7 +74,7 @@ class Symmetry(Enum):
         elif self == Symmetry.THREE_D:
             return '3d first order'
 
-class Geometry(geo.Geometry):
+class Geometry(occ.Geometry):
     """
     Small wrapper class around pygmsh.geo.Geometry which itself is a small wrapper around the powerful GMSH library.
     See the GMSH and pygmsh documentation to learn how to build any 2D or 3D geometry. This class makes it easier to control
